@@ -1,0 +1,5 @@
+1. [Getting started with ActiveMQ Artemis](http://www.mastertheboss.com/jboss-frameworks/activemq/getting-started-with-activemq-artemis/)
+1. [Running the server](https://activemq.apache.org/components/artemis/documentation/1.0.0/running-server.html)
+1. [Установка ArtemisMQ](https://conf.inttrust.ru:8443/pages/viewpage.action?pageId=76515230)
+1. [Ansible ActiveMQ Artemis](https://github.com/remyma/ansible-artemis)
+1. [ActiveMQ (версия artemis) базовая установка и базовое использование Spring JMS](https://russianblogs.com/article/98551141195/)
