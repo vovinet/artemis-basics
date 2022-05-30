@@ -6,13 +6,15 @@
 - Провайдер: Яндекс.Облако
 - JDK: Liberica 11
 
-## Установка JRE:
+## Установка JDK/JRE:
 ОС:
+```
 root@artemis1:/home/zubarev# cat /etc/lsb-release
 DISTRIB_ID="AstraLinuxCE"
 DISTRIB_DESCRIPTION="Astra Linux CE 2.12.43 (Orel)"
 DISTRIB_RELEASE=2.12.43
 DISTRIB_CODENAME=orel
+```
 
 Далее ставим JDK: 
 
@@ -34,6 +36,7 @@ OpenJDK Runtime Environment (build 11.0.15+10-LTS)
 OpenJDK 64-Bit Server VM (build 11.0.15+10-LTS, mixed mode)
 ```
 
+
 ## Установка ActiveMQ Artemis:
 
 Дистрибутив берем по ссылке:
@@ -43,6 +46,10 @@ https://activemq.apache.org/components/artemis/download/
 cd /opt/
 tar -xzf apache-artemis-2.6.2-bin.tar.gz
 mv apache-artemis-2.6.2 artemis
+
+## Параметры запуска и зависимости:
+By default, ActiveMQ Artemis server runs with 1GiB of memory. If your computer has less memory, or you want to run it with more available RAM, modify the value in ```bin/run.sh``` accordingly.
+If you are on Linux you may want to enable libaio For persistence, ActiveMQ Artemis uses its own fast journal, which you can configure to use libaio (which is the default when running on Linux) or Java NIO. In order to use the libaio module on Linux, you'll need to install ```libaio```, if it's not already installed.
 
 ## Создание инстанса
 
